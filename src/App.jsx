@@ -212,6 +212,11 @@ export default function App() {
             </div>
           </div>
         )}
+
+        {/* Footer */}
+        <footer className="footer">
+          Made by <span className="author">avighna</span>
+        </footer>
       </div>
     </div>
   );
