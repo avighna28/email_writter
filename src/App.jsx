@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-const GEMINI_API_KEY = 'AIzaSyC_gGmIm8ov8_iz3T6s9RqrfGw4MQBoNh4';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 async function generateEmailWithGemini({ topic, name, recipient, phone, email, mode }) {
